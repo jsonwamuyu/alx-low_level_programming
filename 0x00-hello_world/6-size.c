@@ -21,5 +21,5 @@ printf("Size of a long int: %d byte(s)\n", li);
 printf("Size of a long long int: %d byte(s)\n", lli);
 printf("Size of a float: %d byte(s)\n", f);
 
-return 0;
+return (0);
 }
