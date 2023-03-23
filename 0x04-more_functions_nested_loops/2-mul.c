@@ -20,8 +20,10 @@ int mul(int a, int b);
  *Return - result of multiplying a and b
  */
 
+
 int mul(int a, int b)
 {
-return (a * b);
+	int product = a * b;
 
+	return (product);
 }
