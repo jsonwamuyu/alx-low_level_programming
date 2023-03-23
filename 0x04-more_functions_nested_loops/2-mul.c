@@ -1,25 +1,22 @@
 #include "main.h"
 
-
 /**
- *mul - function declaration
- *Description - find product of two numbers
- *@a - first number
- *@b - second number
- *Return - product of a and b
+ * mul - function declaration
+ * Description: find product of 2 numbers
+ * @a: first number
+ * @b: second number
+ * Return: product
  */
-
 
 int mul(int a, int b);
 
-
 /**
- *mul - function that multiply two numbers"
- *@a - first number
- *@b - second number
- *Return - result of multiplying a and b
+ * mul - function definition
+ * Description: multiply 2 numbers
+ * @a: number 1
+ * @b: number 2
+ * Return: the product
  */
-
 
 int mul(int a, int b)
 {
