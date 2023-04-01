@@ -5,6 +5,7 @@
  * @dest: String one
  * @src: String two
  * @n: number of char to append
+ * Return: New concatenated string
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -13,13 +14,14 @@ char *_strncat(char *dest, char *src, int n)
 	int destlen;
 	int srclen;
 
-	destln = 0;
+	destlen = 0;
 	srclen = 0;
 
 	for (i = 0; src[i] != '\0'; i++)
 		srclen++;
 	for (i = 0; dest[i] != '\0'; i++)
-		destln++;
-	for (i = 0; i <= n; i++)
+		destlen++;
+	for (i = 0; i < n; i++)
 		dest[destlen + i] = src[i];
+	return (dest);
 }
