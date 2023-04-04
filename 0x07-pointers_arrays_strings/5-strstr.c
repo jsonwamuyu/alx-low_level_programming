@@ -4,7 +4,7 @@
  *  _strstr - function that locatea substring
  *  @haystack: first string
  *  @needle: substring to search
- *  Return Located string
+ *  Return: Located string
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -13,10 +13,8 @@ char *_strstr(char *haystack, char *needle)
 
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		//Check if the first character of a needle matches
 		if (haystack[i] == needle[0])
 		{
-			//start comparing the rest of the characters
 			for (j = 1; needle[j] != '\0'; j++)
 			{
 				if (haystack[i + j] != needle[j])
@@ -26,9 +24,9 @@ char *_strstr(char *haystack, char *needle)
 			}
 			if (needle[j] == '\0')
 			{
-				return (&haystack[i]); //needle found, return pointer to beginning
+				return (&haystack[i]);
 			}
 		}
 	}
-	return ('\n');
+	return ('\0');
 }
